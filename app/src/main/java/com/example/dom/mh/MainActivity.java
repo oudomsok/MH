@@ -8,6 +8,7 @@ import android.os.Bundle;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.TextView;
 import android.widget.Toast;
 
 
@@ -23,7 +24,8 @@ public class MainActivity extends ActionBarActivity {
         toolbar= (Toolbar) findViewById(R.id.app_bar);
         setSupportActionBar(toolbar);
         getSupportActionBar().setDisplayShowHomeEnabled(true);
-
+        TextView tv=(TextView)findViewById(R.id.tv);
+        tv.setText("OUDOM");
         //Fragment Navigation Drawer
         NavigationDrawerFragment drawerFragment=(NavigationDrawerFragment)
                 getSupportFragmentManager().findFragmentById(R.id.fragment_navigation_drawer);
