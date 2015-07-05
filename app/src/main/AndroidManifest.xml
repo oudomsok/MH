@@ -31,7 +31,7 @@
         </activity>
         <activity
             android:name=".SplashScreen"
-            android:label="@string/title_activity_splash_screen" >
+            android:label="MH" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
 
