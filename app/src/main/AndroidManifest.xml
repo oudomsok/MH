@@ -18,7 +18,7 @@
         </activity>
         <activity
             android:name=".SubActivity"
-            android:label="@string/title_activity_sub" >
+            android:label="Detail" >
 
             <!-- back button -->
             <meta-data
