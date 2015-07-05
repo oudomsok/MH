@@ -3,6 +3,7 @@
     xmlns:layout="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#FFFFFF"
 
     tools:context="com.example.dom.mh.SubActivity">
 
@@ -10,9 +11,65 @@
         android:id="@+id/app_bar"
         layout="@layout/app_bar" />
 
-    <TextView android:text="@string/hello_world" android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+
+<ImageView
+    android:layout_below="@+id/app_bar"
+    android:id="@+id/iv"
+    android:src="@drawable/ic_bum"
+    android:layout_width="100dp"
+    android:layout_height="100dp"
+    android:scaleType="fitStart"
+    />
+
+    <View
+        android:layout_width="0.5dp"
+        android:layout_height="100dp"
+        android:background="@android:color/darker_gray"
+        android:id="@+id/view1"
         android:layout_below="@+id/app_bar"
-         />
+        android:layout_marginTop="12dp"
+
+        android:layout_toRightOf="@+id/iv"
+        />
+
+<TextView
+    android:textColor="#222222"
+    android:layout_below="@+id/app_bar"
+    android:id="@+id/tv"
+    android:paddingTop="40dp"
+    android:paddingLeft="5dp"
+    android:layout_toRightOf="@+id/iv"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="Bumrungrad Internation Hospital"
+    android:textAppearance="@android:style/TextAppearance.DialogWindowTitle"
+
+/>
+    <!--android:text="Line1\n-Line2\n-Line3"-->
+<View
+
+    android:layout_width="fill_parent"
+    android:layout_height="1dp"
+    android:background="@android:color/darker_gray"
+    android:id="@+id/view"
+    android:layout_marginTop="25dp"
+    android:layout_below="@+id/iv"
+    android:layout_alignRight="@+id/tv"
+    android:layout_alignEnd="@+id/tv" />
+
+<TextView
+    android:textColor="#222222"
+    android:paddingLeft="10dp"
+    android:paddingTop="20dp"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+
+    android:text="Address : \n\nNo. 147-153, Kampuchea Krom Blvd (128),\n\nCorner of Preah Monivong (St. 93), BS Office \n\nCenter, 12251 Phnom Penh"
+    android:id="@+id/tv2"
+    android:textAppearance="@android:style/TextAppearance.DialogWindowTitle"
+    android:layout_below="@+id/view"
+    android:layout_alignParentLeft="true"
+    android:layout_alignParentStart="true" />
 
 </RelativeLayout>
+

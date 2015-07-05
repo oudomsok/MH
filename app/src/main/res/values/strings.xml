@@ -9,4 +9,6 @@
     <string name="drawer_close">Close</string>
 <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_custom_list">CustomList</string>
+    <string name="title_activity_splash_screen">SplashScreen</string>
 </resources>
